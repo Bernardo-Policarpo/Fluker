@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atumalaka - Rede Social</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="modo-fluker">
+  <button id="toggle-dark">Modo Fluker</button>
+  <div id="notifications"></div>
+</section>
+  <!-- Tela de login -->
+  <div id="login-screen" class="screen">
+    <header><h1>FLUKER</h1></header>
+    <input type="text" id="username" placeholder="Nome de usuário" autocomplete="off" />
+    <input type="password" id="password" placeholder="Senha" autocomplete="off" />
+    <button id="btn-login">Entrar</button>
+    <button id="btn-show-register">Criar conta</button>
+  </div>
+
+  <!-- Tela de registro -->
+  <div id="register-screen" class="screen hidden">
+    <header><h1>Criar Conta</h1></header>
+    <input type="text" id="reg-username" placeholder="Nome de usuário" autocomplete="off" />
+    <input type="password" id="reg-password" placeholder="Senha" autocomplete="off" />
+    <button id="btn-register">Registrar</button>
+    <button id="btn-show-login">Voltar</button>
+  </div>
+
+  <!-- Tela do feed -->
+  <div id="feed-screen" class="screen hidden">
+    <header>
+      <h1>Bem-vindo, <span id="user-display"></span></h1>
+      <div>
+        <button id="btn-edit-profile">Editar Perfil</button>
+        <button id="btn-logout">Sair</button>
+      </div>
+    </header>
+
+    <!-- Postar story -->
+    <section id="stories-section">
+      <h2>Stories</h2>
+      <input type="file" id="story-upload" accept="image/*" />
+      <div id="stories"></div>
+    </section>
+
+    <!-- Novo post -->
+    <section id="new-post-section">
+      <textarea id="post-text" placeholder="O que você está pensando?" rows="3"></textarea>
+      <input type="file" id="post-image" accept="image/*" />
+      <button id="btn-post">Publicar</button>
+    </section>
+
+    <!-- Feed de posts -->
+    <section id="feed"></section>
+
+    <!-- Chat -->
+    <section id="chat-section">
+      <h2>Chat Direto</h2>
+      <input type="text" id="chat-target" placeholder="Nome do usuário" />
+      <div id="chat-box"></div>
+      <input type="text" id="chat-message" placeholder="Digite sua mensagem" />
+      <button id="btn-send-chat">Enviar</button>
+    </section>
+  </div>
+
+  <!-- Tela de perfil -->
+  <div id="profile-screen" class="screen hidden">
+    <header>
+      <h1>Editar Perfil</h1>
+      <button id="btn-back-feed">Voltar</button>
+    </header>
+    <input type="text" id="edit-username" placeholder="Novo nome de usuário" />
+    <input type="password" id="edit-password" placeholder="Nova senha" />
+    <input type="file" id="edit-avatar" accept="image/*" />
+    <button id="btn-save-profile">Salvar</button>
+  </div>
+
+  <script src="app.js"></script>
+  <audio id="peludao" src="risada-atumalaka.mp3" preload="auto"></audio>
+</body>
+</html>
