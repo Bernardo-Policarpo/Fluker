@@ -84,8 +84,7 @@ button:hover {
 #toggle-dark:hover{
     cursor:pointer;
   transition:1s;
-  transform: scale(1.05)
-  rotate(3980deg); 
+  transform: scale(1.05);
 }
 
 /* Feed */
