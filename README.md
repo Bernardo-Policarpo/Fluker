@@ -5,3 +5,7 @@ Ass: Bernardo
 Eu concordo
 
 Ass: Pablo
+
+Pode ser
+
+Ass: Gabriel
